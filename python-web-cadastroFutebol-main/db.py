@@ -1,9 +1,9 @@
 import pyodbc
 
-server = 'serversqldevops.database.windows.net'
-database = 'sqldb'
-username = 'rm85846'
-password = '121201'
+server = 'sqlserver-rm88264.database.windows.net'
+database = 'pythondb'
+username = 'admsql'
+password = 'devops@fiap21'
 driver = '{ODBC Driver 17 for SQL Server}'
 
 
