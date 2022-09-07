@@ -1,0 +1,19 @@
+CREATE TABLE [dbo].[Cadastro](
+[id] [int] IDENTITY(1,1) NOT NULL,
+[nome] [varchar](150) NULL,
+[clube] [varchar](150) NULL,
+[posicao] [varchar](150) NULL,
+PRIMARY KEY CLUSTERED
+( [id] ASC
+)WITH (STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY
+
+CREATE TABLE [dbo].[Campeonato](
+[idCampeonato] [int] IDENTITY(1,1) NOT NULL,
+[id] [int] IDENTITY(1,1) NOT NULL, CONSTRAINT fk_IdJogador FOREIGN KEY (id) REFERENCES Cadastro (id)
+[nome] [varchar](150) NULL,
+[nacionalidade] [varchar](150) NULL,
+PRIMARY KEY CLUSTERED
+( [idCampeonato] ASC
+)WITH (STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY
